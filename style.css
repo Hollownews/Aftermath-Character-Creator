@@ -1,0 +1,81 @@
+style>
+        body {
+            font-family: 'Staatliches', sans-serif;
+            margin: 20px;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+            border: 2px solid #ff4500;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: #ff4500;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ff6347;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            background-color: #1a1a1a;
+            border: 2px solid #ff6347;
+            color: #ff6347;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        select:focus, input:focus {
+            outline: none;
+            border-color: #ff4500;
+            box-shadow: 0 0 5px #ff4500;
+        }
+        #base-stats, #skills-section, #religion-details {
+            display: none;
+            border-top: 1px solid #ff6347;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .xp-display {
+            margin: 15px 0;
+            font-weight: bold;
+            color: #ff6347;
+            text-align: center;
+            font-size: 18px;
+        }
+        #xp-total, #xp-spent {
+            color: #ffa500;
+        }
+        /* Button styles */
+        .button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #d14000;
+        }
+    </style>

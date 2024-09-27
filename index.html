@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Aftermath Character Creator</h2>
+
+    <div class="form-group">
+        <label for="player-name">Player Name:</label>
+        <input type="text" id="player-name" name="player-name" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+        <label for="character-name">Character Name:</label>
+        <input type="text" id="character-name" name="character-name" placeholder="Enter your character name">
+    </div>
+
+    <div class="form-group">
+        <label for="mutant-type">Mutant Type:</label>
+        <select id="mutant-type">
+            <option value="">Select a Mutant Type</option>
+            <option value="mutant1">Ravager</option>
+            <option value="mutant2">Runners</option>
+            <option value="mutant3">Ironframe</option>
+            <option value="mutant4">The Sunforaged</option>
+            <option value="mutant5">Murk Diver</option>
+            <option value="mutant6">Cavern Glider</option>
+            <option value="mutant7">The Awakened</option>
+            <option value="mutant8">Half-Life</option>
+            <option value="mutant9">Dweller</option>
+            <option value="mutant10">Lurker</option>
+            <option value="mutant11">Geodite</option>
+            <option value="mutant12">Mycelians</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="religion">Religion:</label>
+        <select id="religion">
+            <option value="">Select Religion</option>
+            <option value="religion1">Well Waters</option>
+            <option value="religion2">The Supplucants of Solis</option>
+            <option value="religion3">Silverlight Devotion</option>
+            <option value="religion4">Covenant of the Elders</option>
+            <option value="religion5">Terra Dominus</option>
+            <option value="religion6">The Great Network</option>
+            <option value="religion7">The Hunger of the Pit</option>
+            <option value="religion8">None</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="skill-tree-1">Skill Tree 1:</label>
+        <select id="skill-tree-1" onchange="showSkills()">
+            <option value="">Select Skill Tree 1</option>
+            <option value="apothecary">Apothecary</option>
+            <option value="builder">Builder</option>
+            <option value="clever">Clever</option>
+            <option value="cook">Cook</option>
+            <option value="gatherer">Gatherer</option>
+            <option value="liturgy">Liturgy</option>
+            <option value="medical">Medical</option>
+            <option value="vindictive">Vindictive</option>
+            <option value="fighter">Fighter</option>
+            <option value="gladiator">Gladiator</option>
+            <option value="gunslinger">Gunslinger</option>
+            <option value="ranger">Ranger</option>
+            <option value="rogue">Rogue</option>
+            <option value="warden">Warden</option>
+            <option value="berserker">Berserker</option>
+            <option value="elementalist">Elementalist</option>
+            <option value="mindscape">Mindscape</option>
+            <option value="restorer">Restorer</option>
+        </select>
+    </div>
+
+    <div class="xp-display">
+        <p>Total XP: <span id="total-xp">16</span></p>
+        <p>XP Spent: <span id="xp-spent">0</span></p>
+    </div>
+
+    <div class="form-group" id="skills-box" style="display: none;">
+        <h3>Skill Tree Skills</h3>
+        <label for="skills">Select a Skill:</label>
+        <select id="skills" onchange="buySkill()">
+            <option value="">-- Select a Skill --</option>
+        </select>
+
+        <h3>Selected Skills:</h3>
+        <ul id="selected-skills-list"></ul>
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
+
+
